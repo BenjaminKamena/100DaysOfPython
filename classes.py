@@ -102,25 +102,32 @@
 #print(bank.withdrawal(700))
 
 # day16
-#from turtle import Turtle, Screen
+from turtle import *
 
-#timmy = Turtle()
-#my_screen = Screen()
-#timmy.shape('turtle')
-#timmy.color('green')
-#timmy.forward(100)
+timmy = Turtle()
+my_screen = Screen()
+timmy.shape('turtle')
+timmy.color('green', 'yellow')
+timmy.begin_fill()
+while True:
+    timmy.forward(200)
+    timmy.left(170)
+    if abs(timmy.pos()) < 1:
+        break;
+timmy.end_fill()
+timmy.done()
 
-#print(my_screen.canvheight)
-#my_screen.exitonclick()
+print(my_screen.canvheight)
+my_screen.exitonclick()
 
-from prettytable import  PrettyTable
+#from prettytable import  PrettyTable
 
-table = PrettyTable()
-table.add_column("Pokeman Name", ["Benjamin", "Kamena", "Chulu"])
-table.add_column("Type", ["Electric", "Water", "Fire"])
-table.align = "c"
+#table = PrettyTable()
+#table.add_column("Pokeman Name", ["Benjamin", "Kamena", "Chulu"])
+#table.add_column("Type", ["Electric", "Water", "Fire"])
+#table.align = "c"
 
-print(table)
+#print(table)
 
 
 
